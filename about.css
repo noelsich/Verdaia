@@ -1,0 +1,44 @@
+/* General Body Styling */
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #253A46; /* Changed color for better visibility */
+    min-height: 100vh;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+/* Header Styling */
+header {
+    background-color: white;
+    padding: 20px;
+    position: sticky; /* Keeps the header at the top when scrolling */
+    top: 0; /* Ensures no gap at the top */
+    z-index: 1000; /* Places the header above other content */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visibility */
+}
+
+/* Section Styling for Side-by-Side Layout */
+.firstsect {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Vertically aligns content */
+    justify-content: center; /* Ensures content is centered horizontally */
+    width: 100%; 
+    padding: 20px;
+    gap: 50px; /* Adds spacing between the image and text */
+    box-sizing: border-box;
+    color: #253A46;
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .firstsect{
+        
+        margin: auto; 
+        margin-top: 20%;
+    }
+    
+}

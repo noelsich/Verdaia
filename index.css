@@ -1,0 +1,119 @@
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    min-height: 100vh;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+/* Tagline Styling */
+.tagline {
+    display: flex;
+    flex-direction: column;
+    background-color: #253A46;
+    font-size: xx-large;
+    padding: 10px;
+    text-align: center;
+    align-items: center; /* Centers content horizontally */
+    justify-content: center; /* Centers content vertically within the container */
+    min-height: fit-content; /* Adjust height as needed */
+}
+
+/* Tag1 (default white text) */
+.tag1 {
+    color: white;
+    font-weight: bold;
+}
+
+/* Tag2 */
+.tag2 {
+    color: #D4A261;
+    background-color: white;
+    width: fit-content;
+    margin-top: 10px; /* Adds space between the elements */
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block; /* Ensures the width of the background color is just enough for the text */
+}
+
+/* General styling for the container */
+.ProServices {
+    justify-content: center; /* Centers content vertically within the container */
+    padding: 20px;
+    max-width: 1200px;
+    background-color: rgba(0, 0, 0, 0.05); /* Light transparent background */
+    border: 1px solid rgba(0, 0, 0, 0.1); /* Subtle border */
+    border-radius: 10px; /* Rounded corners */
+    text-align: center;
+    align-items: center;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centers content vertically within the container */
+}
+
+/* Heading styling */
+.ProServices h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #253A46;
+}
+
+/* Flexbox layout for services */
+.services-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Styling for individual service containers */
+.service-container {
+    background-color: rgba(255, 255, 255, 0.8); /* Light semi-transparent background */
+    border: 2px solid rgba(0, 0, 0, 0.1); /* Subtle border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px;
+    width: calc(50% - 20px); /* Two per row on larger screens */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
+
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    justify-content: center;
+    align-items: center; /* Ensures content is centered horizontally */
+}
+
+/* Hover effect for service containers */
+.service-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Title styling */
+.service-title {
+    font-size: 1.5rem;
+    color: #253A46;
+    margin-bottom: 10px;
+}
+
+/* Description styling */
+.service-description {
+    font-size: 1rem;
+    color: #555555;
+}
+
+/* Responsive design for small screens */
+@media (max-width: 768px) {
+    .service-container {
+        width: 100%; /* Stack vertically */
+    }
+    .body{
+    padding-top: 0%;}
+}

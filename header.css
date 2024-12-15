@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white; /* Default text color */
+    min-height: 100vh; /* Ensure the body spans the viewport */
+    padding: 0;
+    background-color: #f5f5f5; /* A neutral background for the rest of the page */
+}
+
+/* General header styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #253A46;
+    padding: 20px;
+    width: 100%;
+    color: white;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    flex-wrap: nowrap;
+}
+/* Hide the image logo by default */
+/* Display text logo by default */
+.text-logo {
+    font-size: 24px; /* Adjust size of text */
+    font-weight: bold;
+    color: white;
+}
+
+/* Add padding to the body to prevent the header from covering the content */
+body {
+    margin: 0;
+    padding-top: 80px; /* Adjust this to match the height of the header */
+}
+
+
+/* Media query for small screens (iPhone SE and similar) */
+@media (max-width: 768px) {
+    header {
+        padding: 15px; /* Reduce padding for smaller screens */
+        width: 100%;
+
+    }
+
+    #links{
+        font-size: 70%;
+    }
+
+    body {
+        padding-top: 0%;/* Adjust based on header height */
+    }
+    
+
+
+    /* Adjust button size and position for mobile screens */
+    .cta {
+        display: none;
+        
+    }
+
+
+
+
+}
+
+
+
+.cta {
+    background-color: #e74c3c;
+    color: #ffffff; /* Bright yellow for visibility */
+    padding: 5px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s, color 0.3s;
+}
+
+.cta:hover {
+    background-color: #c0392b;
+    color: #D4A261; /* Ensure contrast when hovered */
+}
+
+a {
+    color: white; /* Bright yellow for visibility */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+#links {
+    
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #253A46; /* Background color only for the header */
+        padding: 20px;
+        color: white; /* Ensure header text is visible */
+    
+}
+
+#links a {
+    margin: 0 10px; /* Adds horizontal spacing between links */
+    color: #ffffff; /* Ensure visibility */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold;
+}
+
+#links a:hover {
+    color: #D4A261; /* Change color on hover */
+}
+
+.text-logo{
+    color: #D4A261;
+    font-size: large;
+}
+
+/* Button container styling */
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin: 50px; /* Add spacing around the button */
+}
+
+/* Hire Us button styling */
+.hire-button {
+    display: inline-block;
+    background-color: #253A46; /* Dark blue background */
+    color: white; /* White text color */
+    text-decoration: none; /* Remove underline */
+    padding: 15px 30px; /* Padding for size */
+    font-size: 1rem; /* Font size */
+    font-weight: bold; /* Bold text */
+    border-radius: 8px; /* Rounded corners */
+    transition: all 0.3s ease; /* Smooth hover transition */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    text-align: center;
+}
+
+/* Hover effect for the button */
+.hire-button:hover {
+    background-color: #D4A261; /* Change background color on hover */
+    color: #253A46; /* Change text color on hover */
+    transform: translateY(-3px); /* Slightly lift the button */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Intensify shadow on hover */
+}
